@@ -5,4 +5,4 @@ mkdir -p backups
 FILENAME="backup-$(date +%Y%m%d-%H%M%S).tar.gz"
 tar -czf "backups/$FILENAME" -- "$SOURCE"
 SIZE=$(du -h "backups/$FILENAME" | cut -f1)
-echo "Backup complete! (size: $SIZE)"
+echo "[$(date +%H:%M:%S)] Backup complete! (file: $FILENAME, size: $SIZE)"
