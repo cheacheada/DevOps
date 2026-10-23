@@ -1,0 +1,26 @@
+ Container devops-midterm-web-2  Running
+ Container devops-midterm-web-3  Running
+ Container devops-midterm-web-1  Starting
+ Container devops-midterm-web-1  Started
+[2026-10-23T12:23:05+09:00] running_web=3 target=3
+ Container devops-midterm-web-1  Running
+ Container devops-midterm-web-2  Running
+ Container devops-midterm-web-3  Running
+[2026-10-23T12:23:11+09:00] running_web=3 target=3
+ Container devops-midterm-web-1  Running
+ Container devops-midterm-web-2  Running
+ Container devops-midterm-web-3  Running
+[2026-10-23T12:23:17+09:00] running_web=3 target=3
+ Container devops-midterm-web-1  Running
+ Container devops-midterm-web-2  Running
+ Container devops-midterm-web-3  Running
+[2026-10-23T12:23:22+09:00] running_web=3 target=3
+ Container devops-midterm-web-2  Running
+ Container devops-midterm-web-3  Running
+ Container devops-midterm-web-1  Starting
+ Container devops-midterm-web-1  Started
+[2026-10-23T12:23:28+09:00] running_web=3 target=3
+ Container devops-midterm-web-1  Running
+ Container devops-midterm-web-2  Running
+ Container devops-midterm-web-3  Running
+[2026-10-23T12:23:34+09:00] running_web=3 target=3

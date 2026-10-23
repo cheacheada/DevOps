@@ -1,0 +1,162 @@
+2026-10-23T12:22:09+09:00
+Docker Engine 29.1.3
+Docker Compose version 2.40.3+ds1-0ubuntu1~24.04.1
+Compose config: PASS
+NAME                     IMAGE                COMMAND                  SERVICE   CREATED              STATUS                           PORTS
+devops-midterm-nginx-1   nginx:alpine         "/docker-entrypoint.…"   nginx     About a minute ago   Up 1 second                      0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
+devops-midterm-redis-1   redis:7-alpine       "docker-entrypoint.s…"   redis     About a minute ago   Up 1 second (health: starting)   6379/tcp
+devops-midterm-web-1     devops-midterm-web   "python app.py"          web       About a minute ago   Up 1 second (health: starting)   5000/tcp
+devops-midterm-web-2     devops-midterm-web   "python app.py"          web       About a minute ago   Up 1 second (health: starting)   5000/tcp
+devops-midterm-web-3     devops-midterm-web   "python app.py"          web       About a minute ago   Up 1 second (health: starting)   5000/tcp
+--- 12 actual hostname responses ---
+{"hostname":"81ab28cf7554","status":"ok"}
+
+{"hostname":"09621678fd50","status":"ok"}
+
+{"hostname":"a958eaaf6b2b","status":"ok"}
+
+{"hostname":"09621678fd50","status":"ok"}
+
+{"hostname":"81ab28cf7554","status":"ok"}
+
+{"hostname":"a958eaaf6b2b","status":"ok"}
+
+{"hostname":"09621678fd50","status":"ok"}
+
+{"hostname":"a958eaaf6b2b","status":"ok"}
+
+{"hostname":"09621678fd50","status":"ok"}
+
+{"hostname":"81ab28cf7554","status":"ok"}
+
+{"hostname":"81ab28cf7554","status":"ok"}
+
+{"hostname":"09621678fd50","status":"ok"}
+
+uid=1000(appuser) gid=1000(appuser) groups=1000(appuser)
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+--- shared Redis entries ---
+{"count":1,"entries":[{"message":"Compose volume test","name":"Linux","time":"2026-10-23 03:22"}]}
+
+--- down/up keeps named volume ---
+ Container devops-midterm-nginx-1  Stopping
+ Container devops-midterm-nginx-1  Stopped
+ Container devops-midterm-nginx-1  Removing
+ Container devops-midterm-nginx-1  Removed
+ Container devops-midterm-web-2  Stopping
+ Container devops-midterm-web-1  Stopping
+ Container devops-midterm-web-3  Stopping
+ Container devops-midterm-web-2  Stopped
+ Container devops-midterm-web-2  Removing
+ Container devops-midterm-web-2  Removed
+ Container devops-midterm-web-3  Stopped
+ Container devops-midterm-web-3  Removing
+ Container devops-midterm-web-3  Removed
+ Container devops-midterm-web-1  Stopped
+ Container devops-midterm-web-1  Removing
+ Container devops-midterm-web-1  Removed
+ Container devops-midterm-redis-1  Stopping
+ Container devops-midterm-redis-1  Stopped
+ Container devops-midterm-redis-1  Removing
+ Container devops-midterm-redis-1  Removed
+ Network devops-midterm_default  Removing
+ Network devops-midterm_default  Removed
+ Network devops-midterm_default  Creating
+ Network devops-midterm_default  Created
+ Container devops-midterm-redis-1  Creating
+ Container devops-midterm-redis-1  Created
+ Container devops-midterm-web-3  Creating
+ Container devops-midterm-web-1  Creating
+ Container devops-midterm-web-2  Creating
+ Container devops-midterm-web-3  Created
+ Container devops-midterm-web-2  Created
+ Container devops-midterm-web-1  Created
+ Container devops-midterm-nginx-1  Creating
+ Container devops-midterm-nginx-1  Created
+ Container devops-midterm-redis-1  Starting
+ Container devops-midterm-redis-1  Started
+ Container devops-midterm-redis-1  Waiting
+ Container devops-midterm-redis-1  Healthy
+ Container devops-midterm-web-2  Starting
+ Container devops-midterm-web-2  Started
+ Container devops-midterm-web-1  Starting
+ Container devops-midterm-web-1  Started
+ Container devops-midterm-web-3  Starting
+ Container devops-midterm-web-3  Started
+ Container devops-midterm-web-2  Waiting
+ Container devops-midterm-web-1  Waiting
+ Container devops-midterm-web-3  Waiting
+ Container devops-midterm-web-2  Healthy
+ Container devops-midterm-web-1  Healthy
+ Container devops-midterm-web-3  Healthy
+ Container devops-midterm-nginx-1  Starting
+ Container devops-midterm-nginx-1  Started
+ Container devops-midterm-web-2  Waiting
+ Container devops-midterm-web-1  Waiting
+ Container devops-midterm-web-3  Waiting
+ Container devops-midterm-redis-1  Waiting
+ Container devops-midterm-nginx-1  Waiting
+ Container devops-midterm-nginx-1  Healthy
+ Container devops-midterm-redis-1  Healthy
+ Container devops-midterm-web-2  Healthy
+ Container devops-midterm-web-1  Healthy
+ Container devops-midterm-web-3  Healthy
+{"count":1,"entries":[{"message":"Compose volume test","name":"Linux","time":"2026-10-23 03:22"}]}
+
+--- isolated disposable volume test for down -v ---
+ Network devops-volume-test_default  Creating
+ Network devops-volume-test_default  Created
+ Volume devops-volume-test_disposable  Creating
+ Volume devops-volume-test_disposable  Created
+ Container devops-volume-test-redis-1  Creating
+ Container devops-volume-test-redis-1  Created
+ Container devops-volume-test-redis-1  Starting
+ Container devops-volume-test-redis-1  Started
+ Container devops-volume-test-redis-1  Waiting
+ Container devops-volume-test-redis-1  Healthy
+OK
+ Container devops-volume-test-redis-1  Stopping
+ Container devops-volume-test-redis-1  Stopped
+ Container devops-volume-test-redis-1  Removing
+ Container devops-volume-test-redis-1  Removed
+ Network devops-volume-test_default  Removing
+ Network devops-volume-test_default  Removed
+ Network devops-volume-test_default  Creating
+ Network devops-volume-test_default  Created
+ Container devops-volume-test-redis-1  Creating
+ Container devops-volume-test-redis-1  Created
+ Container devops-volume-test-redis-1  Starting
+ Container devops-volume-test-redis-1  Started
+ Container devops-volume-test-redis-1  Waiting
+ Container devops-volume-test-redis-1  Healthy
+After down/up:
+before-delete
+ Container devops-volume-test-redis-1  Stopping
+ Container devops-volume-test-redis-1  Stopped
+ Container devops-volume-test-redis-1  Removing
+ Container devops-volume-test-redis-1  Removed
+ Volume devops-volume-test_disposable  Removing
+ Network devops-volume-test_default  Removing
+ Volume devops-volume-test_disposable  Removed
+ Network devops-volume-test_default  Removed
+ Network devops-volume-test_default  Creating
+ Network devops-volume-test_default  Created
+ Volume devops-volume-test_disposable  Creating
+ Volume devops-volume-test_disposable  Created
+ Container devops-volume-test-redis-1  Creating
+ Container devops-volume-test-redis-1  Created
+ Container devops-volume-test-redis-1  Starting
+ Container devops-volume-test-redis-1  Started
+ Container devops-volume-test-redis-1  Waiting
+ Container devops-volume-test-redis-1  Healthy
+After down -v/up (exists=0 means deleted):
+0
+ Container devops-volume-test-redis-1  Stopping
+ Container devops-volume-test-redis-1  Stopped
+ Container devops-volume-test-redis-1  Removing
+ Container devops-volume-test-redis-1  Removed
+ Network devops-volume-test_default  Removing
+ Volume devops-volume-test_disposable  Removing
+ Volume devops-volume-test_disposable  Removed
+ Network devops-volume-test_default  Removed
