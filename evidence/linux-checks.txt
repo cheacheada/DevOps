@@ -1,0 +1,20 @@
+2026-10-23T12:20:06+09:00
+Linux BOOK-GKDC4BQHJ0 6.18.54.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+Ubuntu 24.04.4 LTS
+GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)
+[12:20:06] Backup complete! (file: backups/backup-20261023-122006-634.tar.gz, size: 4.0K)
+sample/
+sample/note.txt
+Not a directory: missing-directory
+Missing input rejected: PASS
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   597    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.3
+Date: Fri, 23 Oct 2026 03:20:07 GMT
+Content-type: text/html; charset=utf-8
+Content-Length: 597
+
+LISTEN 0      5           127.0.0.1:18080      0.0.0.0:*    users:(("python3",pid=650,fd=3))
+OSError: [Errno 98] Address already in use
